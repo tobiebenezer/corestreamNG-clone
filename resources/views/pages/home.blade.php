@@ -33,7 +33,7 @@
           <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-5">
             <div class="img-effect text-lg-center">
               <img
-                src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/banner.png"
+                src="{{asset('img/Home/banner.png')}}"
                 alt="banner"
                 class="img-fluid"
               />
@@ -54,7 +54,7 @@
             <div class="row w3-services-right-grid">
               <div class="col-lg-4">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/mobile.png"
+                  src="{{asset('img/Home/mobile.png')}}"
                   alt=""
                   class="img-fluid"
                 />
@@ -65,7 +65,7 @@
                     <div class="float-lt feature-gd color-orange">
                       <div class="icon">
                         <img
-                          src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/backup.png"
+                          src="{{asset('img/Home/backup.png')}}"
                           alt=""
                           class="img-fluid"
                         />
@@ -84,7 +84,7 @@
                     <div class="float-mid feature-gd color-green">
                       <div class="icon">
                         <img
-                          src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/team.png"
+                          src="{{asset('img/Home/team.png')}}"
                           alt=""
                           class="img-fluid"
                         />
@@ -103,7 +103,7 @@
                     <div class="float-rt feature-gd color-blue">
                       <div class="icon">
                         <img
-                          src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/tags.png"
+                          src="{{asset('img/Home/tags.png')}}"
                           alt=""
                           class="img-fluid"
                         />
@@ -121,7 +121,7 @@
                     <div class="float-lt feature-gd color-pink">
                       <div class="icon">
                         <img
-                          src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/support.png"
+                          src="{{asset('img/Home/support.png')}}"
                           alt=""
                           class="img-fluid"
                         />
@@ -220,63 +220,63 @@
             <div class="clients-grid align-self">
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/slack.png"
+                  src="{{asset('img/Home/slack.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/shopify.png"
+                  src="{{asset('img/Home/shopify.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/netflix.png"
+                  src="{{asset('img/Home/netflix.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/github.png"
+                  src="{{asset('img/Home/github.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/chimp.png"
+                  src="{{asset('img/Home/chimp.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/disney.png"
+                  src="{{asset('img/Home/disney.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/flipkart.png"
+                  src="{{asset('img/Home/flipkart.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/woocomerce.png"
+                  src="{{asset('img/Home/woocomerce.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="icon">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/amazon.png"
+                  src="{{asset('img/Home/amazon.png')}}"
                   alt=""
                   class="img-fluid"
                 />
@@ -337,7 +337,7 @@
                 <div class="grids-1 box-wrap">
                   <div class="icon">
                     <img
-                      src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/team.png"
+                      src="{{asset('img/Home/team.png')}}"
                       alt=""
                       class="img-fluid"
                     />
@@ -351,7 +351,7 @@
                 <div class="grids-1 box-wrap">
                   <div class="icon">
                     <img
-                      src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/tags.png"
+                      src="{{asset('img/Home/tags.png')}}"
                       alt=""
                       class="img-fluid"
                     />
@@ -361,7 +361,7 @@
                 <div class="grids-1 box-wrap">
                   <div class="icon">
                     <img
-                      src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/backup.png"
+                      src="{{asset('img/Home/backup.png')}}"
                       alt=""
                       class="img-fluid"
                     />
@@ -375,7 +375,7 @@
                 <div class="grids-1 box-wrap">
                   <div class="icon">
                     <img
-                      src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/support.png"
+                      src="{{asset('img/Home/support.png')}}"
                       alt=""
                       class="img-fluid"
                     />
@@ -401,42 +401,42 @@
             <div class="row logos">
               <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/logo1.png"
+                  src="{{asset('img/Home/logo1.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/logo2.png"
+                  src="{{asset('img/Home/logo2.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-sm-0 mt-4">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/logo3.png"
+                  src="{{asset('img/Home/logo3.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-md-0 mt-4">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/logo4.png"
+                  src="{{asset('img/Home/logo4.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/logo5.png"
+                  src="{{asset('img/Home/logo5.png')}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
                 <img
-                  src="Corestream%20-%20Nigeria%20-%20Home%20Robotics_files/logo6.png"
+                  src="{{asset('img/Home/logo6.png')}}"
                   alt=""
                   class="img-fluid"
                 />

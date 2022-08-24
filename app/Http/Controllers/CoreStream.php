@@ -16,4 +16,15 @@ class CoreStream extends Controller
     {
         return view('pages.home');
     }
+
+     /**
+     * Get information concerning Core Stream Ng
+     * 
+     * @return view about page
+     */
+
+    public function about()
+    {
+        return view('pages.about');
+    }
 }

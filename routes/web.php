@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/home',[CoreStream::class,'index'])->name('home');
+Route::get('/about',[CoreStream::class,'about'])->name('about');
