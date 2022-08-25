@@ -3,7 +3,7 @@
         <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
             <h1>
-              <a class="navbar-brand" href="https://corestream.ng/index.html"
+              <a class="navbar-brand" href="{{route('home')}}"
                 ><img
                   src="{{ asset('img/logo.png') }}"
                 />
@@ -25,41 +25,46 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="https://corestream.ng/index.html"
+                  <a class="nav-link" href="{{route('home')}}"
                     >Home
                   </a>
                 </li>
                 <li class="nav-item @@about__active">
-                  <a class="nav-link" href="https://corestream.ng/about.html"
+                  <a class="nav-link" href="{{route('about)}}"
                     >About</a
                   >
                 </li>
                 <li class="nav-item @@services__active">
-                  <a class="nav-link" href="https://corestream.ng/services.html"
+                  <a class="nav-link" href="{{route('services')}}"
                     >Services</a
                   >
                 </li>
                 <li class="nav-item @@project__active">
-                  <a class="nav-link" href="https://corestream.ng/project.html"
+                  <a class="nav-link" href="{{route('project)}}"
                     >Project</a
                   >
                 </li>
                 <li class="nav-item @@project__active">
-                  <a class="nav-link" href="https://corestream.ng/softdev.html"
+                  <a class="nav-link" href="{{route('softwares')}}"
                     >Software Dev</a
+                  >
+                </li>
+                <li class="nav-item @@project__active">
+                  <a class="nav-link" href="{{route('blog.index')}}"
+                    >Blog</a
                   >
                 </li>
                 <li class="nav-item @@surveillance__active">
                   <a
                     class="nav-link"
-                    href="https://corestream.ng/surveillance.html"
+                    href="{{route(surveilance)}}"
                     >Surveillance</a
                   >
                 </li>
 
                 <li class="nav-item">
                   <a
-                    href="https://corestream.ng/contact.html"
+                    href="{{route('contact')}}"
                     class="btn btn-primary d-none d-lg-block btn-style mr-2"
                     >Contact Us</a
                   >

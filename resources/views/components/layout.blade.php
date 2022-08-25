@@ -49,6 +49,13 @@
     />
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('css/coreStream/style-starter.css') }}">
+    <!-- Scripts -->
+    <script defer  src="{{ asset('js/coreStream/bootstrap.js') }}"></script>
+    <script defer src="{{ asset('js/coreStream/jquery-3.js')}}"></script>
+    <script defer src="{{ asset('js/coreStream/jquery.js')}}"></script>
+    <script defer src="{{ asset('js/coreStream/jquery_002.js')}}"></script>
+    <script defer src="{{ asset('js/coreStream/lightbox-plus-jquery.js')}}"></script>
+    <script defer src="{{ asset('js/coreStream/theme-change.js')}}"></script>
   </head>
 
 <body>
