@@ -53,6 +53,21 @@ class CoreStream extends Controller
         return view('pages.contact');
     }
 
+    public function project()
+    {
+        return view('pages.project');
+    }
+
+    public function software()
+    {
+        return view('pages.software');
+    }
+
+    public function survellance()
+    {
+        return view('pages.survellance');
+    }
+    
     /**
      *Send us message to our database Core Stream Ng
      * 
@@ -91,7 +106,5 @@ class CoreStream extends Controller
          return view('pages.message',compact('subscribers'));
      }
 
-
-
-
+     
 }

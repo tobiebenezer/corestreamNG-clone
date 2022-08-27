@@ -34,18 +34,18 @@
                     >About</a
                   >
                 </li>
-                <li class="nav-item @@services__active">
-                  <a class="nav-link" href="{{route('services')}}"
-                    >Services</a
-                  >
+                 <li class="nav-item @@services__active">
+                   <a class="nav-link" href="{{route('services')}}"
+                     >services</a>                  
                 </li>
-                <!-- <li class="nav-item @@project__active">
-                  <a class="nav-link" href=""
+
+                <li class="nav-item @@project__active">
+                  <a class="nav-link" href="{{route('project')}}"
                     >Project</a
                   >
                 </li>
-                <li class="nav-item @@project__active">
-                  <a class="nav-link" href=""
+                <li class="nav-item @@software__active">
+                  <a class="nav-link" href="{{route('software')}}"
                     >Software Dev</a
                   >
                 </li> -->
@@ -54,13 +54,15 @@
                     >Blog</a
                   >
                 </li>
-                <!-- <li class="nav-item @@surveillance__active">
+
+              
+                <li class="nav-item @@survellance__active">
                   <a
                     class="nav-link"
-                    href=""
-                    >Surveillance</a
-                  >
-                </li> -->
+                    href="{{route('survellance')}}"
+                    >Surveilance</a>
+
+                </li> 
 
                 <li class="nav-item">
                   <a
