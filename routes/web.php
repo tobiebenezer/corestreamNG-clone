@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CoreStream;
+use App\Http\Controllers\CoreStreamBlogController;
 use Illuminate\Foundation\Console\RouteCacheCommand;
 
 /*
@@ -28,6 +29,6 @@ Route::get('/message',[CoreStream::class,'message'])->name('message');
 
 //blog
 
-Route::get('/blog',[CoreStreamBlogController::class,'idex'])->name('blog.index');
+Route::get('/blog',[CoreStreamBlogController::class,'index'])->name('blog.index');
 Route::get('/blog/{id}',[CoreStreamBlogController::class,'show'])->name('blog.show');
 

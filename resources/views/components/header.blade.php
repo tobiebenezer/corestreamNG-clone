@@ -30,7 +30,7 @@
                   </a>
                 </li>
                 <li class="nav-item @@about__active">
-                  <a class="nav-link" href="{{route('about)}}"
+                  <a class="nav-link" href="{{route('about')}}"
                     >About</a
                   >
                 </li>
@@ -39,28 +39,28 @@
                     >Services</a
                   >
                 </li>
-                <li class="nav-item @@project__active">
-                  <a class="nav-link" href="{{route('project)}}"
+                <!-- <li class="nav-item @@project__active">
+                  <a class="nav-link" href=""
                     >Project</a
                   >
                 </li>
                 <li class="nav-item @@project__active">
-                  <a class="nav-link" href="{{route('softwares')}}"
+                  <a class="nav-link" href=""
                     >Software Dev</a
                   >
-                </li>
+                </li> -->
                 <li class="nav-item @@project__active">
                   <a class="nav-link" href="{{route('blog.index')}}"
                     >Blog</a
                   >
                 </li>
-                <li class="nav-item @@surveillance__active">
+                <!-- <li class="nav-item @@surveillance__active">
                   <a
                     class="nav-link"
-                    href="{{route(surveilance)}}"
+                    href=""
                     >Surveillance</a
                   >
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                   <a
