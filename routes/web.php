@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CoreStream;
 use App\Http\Controllers\CoreStreamBlogController;
+use App\Http\Livewire\Show;
 use Illuminate\Foundation\Console\RouteCacheCommand;
 
 /*
@@ -16,11 +17,7 @@ use Illuminate\Foundation\Console\RouteCacheCommand;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home',[CoreStream::class,'index'])->name('home');
+Route::get('/',[CoreStream::class,'index'])->name('home');
 Route::get('/about',[CoreStream::class,'about'])->name('about');
 Route::get('/services',[CoreStream::class,'services'])->name('services');
 Route::get('/contact',[CoreStream::class,'contact'])->name('contact');
@@ -32,5 +29,5 @@ Route::get('/survellance',[CoreStream::class,'survellance'])->name('survellance'
 //blog
 
 Route::get('/blog',[CoreStreamBlogController::class,'index'])->name('blog.index');
-Route::get('/blog/{id}',[CoreStreamBlogController::class,'show'])->name('blog.show');
+Route::get('/blog/{id}',Show::class)->name('blog.show');
 

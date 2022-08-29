@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Corcel\Model\Post;
+use Corcel\Model\Comment;
 use Illuminate\Http\Request;
 
 class CoreStreamBlogController extends Controller
@@ -14,6 +15,7 @@ class CoreStreamBlogController extends Controller
     public function index()
     {
         $posts = Post::latest()->paginate(5);
+        
 
         return view('posts.index',compact('posts'));
     }
@@ -28,8 +30,12 @@ class CoreStreamBlogController extends Controller
     public function show(Post $id)
     {
         $post = $id;
-
-        return view('posts.show',compact('post'));
+        $comments =  Comment::where('comment_post_ID',$post->ID)
+                                ->where('comment_approved', 1)
+                                ->where('comment_type','comment')
+                                ->paginate(4);
+        $type = 'comment';
+        return view('posts.show',compact('post','comments','type'));
     }
 
 

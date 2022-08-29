@@ -48,7 +48,7 @@
                   <a class="nav-link" href="{{route('software')}}"
                     >Software Dev</a
                   >
-                </li> -->
+                </li> 
                 <li class="nav-item @@project__active">
                   <a class="nav-link" href="{{route('blog.index')}}"
                     >Blog</a
