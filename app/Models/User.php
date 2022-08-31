@@ -7,11 +7,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Corcel\Model\User as Corcel;
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Permission\Traits\HasRoles;
 
-class User extends Corcel
+class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable,HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -42,4 +43,25 @@ class User extends Corcel
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     *Post belonging to user
+    *@return post 
+     */
+    public function posts()
+    {
+        $this->hasMany(Post::class);
+    }
+
+    /**
+     * the comment made by user
+     * 
+     * @return Comment
+     */
+    public function comments()
+    {
+        $this->hasMany(Comment::class);
+    }
+
+
 }

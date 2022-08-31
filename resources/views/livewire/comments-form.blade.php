@@ -8,22 +8,26 @@
             <div class="d-flex flex-start w-100">
               
               <div class="w-100">
+              @guest
+                <h5>Login to make comment</h5>
+              @endguest
+               @auth
                 <h5>Add a comment</h5>
-               
+                 
                 <div class="form-outline">
                   <textarea class="form-control" wire:model = "comment_content" id="textAreaExample" rows="4"></textarea>
                   <label class="form-label" for="textAreaExample">What is your view?</label>
                 </div>
                 <div class="d-flex justify-content-between mt-3">
                   <input class="form-control" type="email" wire:model ="comment_email" placeholder="Email">
-                  <input class="form-control" type="text" wire:model ="comment_author" placeholder="Name"> 
-                 
+                  
                 </div>
                   <button type="button" wire:click ="updateComment"  class="mt-3 btn btn-primary">
                     Send <i class="fas fa-long-arrow-alt-right ms-1"></i>
                   </button>
               </div>
             </div>
+               @endauth
           </div>
         </div>
       </div>

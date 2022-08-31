@@ -17,6 +17,17 @@ use Illuminate\Foundation\Console\RouteCacheCommand;
 |
 */
 
+Route::get('/home', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+
 Route::get('/',[CoreStream::class,'index'])->name('home');
 Route::get('/about',[CoreStream::class,'about'])->name('about');
 Route::get('/services',[CoreStream::class,'services'])->name('services');
@@ -29,5 +40,10 @@ Route::get('/survellance',[CoreStream::class,'survellance'])->name('survellance'
 //blog
 
 Route::get('/blog',[CoreStreamBlogController::class,'index'])->name('blog.index');
-Route::get('/blog/{id}',Show::class)->name('blog.show');
+
+Route::get('/blog/{id}',[CoreStreamBlogController::class,'show'])->name('blog.show');
+
+//blog permission middle were
+$files = glob(base_path('routes/blog/*.php'),GLOB_BRACE);
+foreach($files as $file) require $file;
 

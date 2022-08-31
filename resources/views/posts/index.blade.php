@@ -2,7 +2,8 @@
     <x-slot:title>
     Blog posts
     </x-slot>
-    <section class="pt-5">
+    <
+    <section class="w3l py-sm-5  pt-5">
     <div class="py-5">
     <div class="container py-4">
     @foreach ($posts as $post )

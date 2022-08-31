@@ -12,7 +12,8 @@ class ShowReply extends Component
 
     protected $listeners = ['show'=>'render'];
     
-    public $comments ;
+    
+    protected $comments ;
 
     public function mount(Comment $comment)
     {
@@ -24,15 +25,16 @@ class ShowReply extends Component
     public function render()
     {
         return <<<'blade'
-        @endforeach($comments as $reply)
+        @foreach($this->comments as $reply)
         <div class="media mt-4">
-             <a class="pr-3" href="#"><img class="rounded-circle" alt="Bootstrap Media Another Preview" src="https://i.imgur.com/xELPaag.jpg" /></a>
+        
+             <a class="pr-3" href="#"><img class="rounded-circle" alt="Bootstrap Media Another Preview" src="{{ asset('img/user(1).png) }}" /></a>
             <div class="media-body">
                     
                 <div class="row">
          <div class="col-12 d-flex">
             <h5>{{$reply->comment_author}}</h5>
-            <span>- - {{ round((Carbon::now()->toDateTimeString() - $comment->comment_date)/360) }} hours ago </span>
+            <span>- - {{ round(abs((strtotime(date('d-m-y h:i:s')) - strtotime($comment->comment_date))% 86400)/3600) }} hours ago </span>
          </div>
          
         

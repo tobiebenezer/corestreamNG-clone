@@ -57,6 +57,14 @@
     <script defer src="{{ asset('js/coreStream/jquery_002.js')}}"></script>
     <script defer src="{{ asset('js/coreStream/lightbox-plus-jquery.js')}}"></script>
     <script defer src="{{ asset('js/coreStream/theme-change.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('/js/tinymce/tinymce.min.js') }}"></script>
+<script type="text/javascript">
+  tinymce.init({
+    selector : "textarea",
+    plugins : ["advlist autolink lists link image charmap print preview anchor", "searchreplace visualblocks code fullscreen", "insertdatetime media table contextmenu paste"],
+    toolbar : "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+  }); 
+</script>
   </head>
 
 <body>

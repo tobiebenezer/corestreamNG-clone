@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Corcel\Model\Post;
-use Corcel\Model\Comment;
+
+use App\Models\Comment;
+use App\Models\Post;
+
 use Illuminate\Http\Request;
 
 class CoreStreamBlogController extends Controller
@@ -23,7 +25,7 @@ class CoreStreamBlogController extends Controller
     /**
      * show the post by id
      * 
-     * @param Corcel\model\Post id
+     * @param Http\model\Post id
      * 
      * @return view post.show
      */

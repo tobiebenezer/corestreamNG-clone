@@ -4,11 +4,11 @@
                  <div class="row">
                      <div class="col-md-12">
                          <h3 class="text-center mb-5">
-                            COMMENTS
+                             
+                            COMMENT
                          </h3>
                          @foreach ($comments as $comment )
                          <div class="col-md-12">
-                             
                          <div class="row">
                              <div class="col-md-12">
                                  <div class="media">
