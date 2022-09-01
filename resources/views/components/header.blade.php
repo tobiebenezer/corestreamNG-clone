@@ -71,6 +71,27 @@
                     >Contact Us</a
                   >
                 </li>
+                @can('create_post')
+                  <li>
+                  <a class="btn nav-link" href="{{route('display-post')}}">View Post</a>
+                  </li>
+                @endcan
+              @guest
+                <li><a class="btn btn-primary nav-link" href="{{route('register')}}">Register</a></li>
+                <li><a class="btn nav-link" href="{{route('login')}}">Login</a></li>
+              @endguest
+              @auth
+                <!-- Authentication -->
+                <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <x-nav-link class="btn nav-link" :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('LogOut') }}
+                            </x-nav-link>
+                        </form>
+              @endauth
               </ul>
               <ul class="navbar-nav search-right mt-lg-0 mt-2"></ul>
 

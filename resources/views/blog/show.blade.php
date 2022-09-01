@@ -11,11 +11,11 @@
         </div>
     </div>
 </section>
-<section class="">
+<section class="w3l-about-breadcrumb ">
 <div class="mt-4">
 <div class="container mt-4">
     @if($post)
-<pre>{{$post}}</pre>
+    <p>{!! $post->post_content !!}</
         
     @endif
 </div>

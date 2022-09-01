@@ -2,15 +2,15 @@
     <x-slot:title>
     Blog posts
     </x-slot>
-    \
+    
     <section class = "w3l py-sm-5">
     <div class="py-5">
     <div class="container py-5 card border-info mb-3" >
    
-  <div class="card-header">{{$post->title}}</div>
+  <div class="text-center card-header"><h1>{{$post->post_title}}</h1></div>
   <div class="card-body">
     
-    <p>{{ $post->post_content }}</p>
+    <p>{!! $post->post_content !!}</p>
     </div>
    <x-posts.comments :comments="$comments"/>
    

@@ -142,12 +142,31 @@ class Blogcontroller extends Controller
       {
           //delete post and return back
           if(!$post) return back()->with('message', 'Post not found');
-          if(!Auth::user()->can('delect_post')) return back()->withMessage('You have no sufficient permissions');
-          Post::destroy($post->id);
-
+          if(!Auth::user()->can('delete_post')) return back()->withMessage('You have no sufficient permissions');
+          $del = Post::destroy($post->id);
+          
           return redirect('/display-post')->with(['message'=>'post has been deleted']);
 
       }
+
+      /**
+       * To upload files to the store directory and return a
+       * response of the location to be embeded in an html img
+       * tag.
+       * 
+       * @param request $request
+       * 
+       * @return response
+       */
+
+       public function upload(Request $request)
+       {
+           $fileName = $request->file('file')->getClientOriginalName();//get the original name of the file 
+           $imgPath = $request->file('file')->storeAs('upload',$fileName,'public');//this save file in the storage folder with it original name as provide
+           
+
+           return response()->json(['location'=>"/storage/$imgPath"]);
+       }
 
       
 }

@@ -10,7 +10,7 @@
     <div class="card">
   <div class="card-body">
     
-    <h5 class="card-title">{{ $post->title }}</h5>
+    <h5 class="card-title">{{ $post->post_title }}</h5>
 <p class="card-text">{!! Str::words($post->post_content,20)  !!}</p>
     <a href="{{route('blog.show',$post)}}" class="btn btn-primary">Read Details</a>
   </div>
