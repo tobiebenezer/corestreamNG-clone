@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 
-Route::group(['middleware' => ['can:create_post']], function () {
+Route::group(['middleware' => ['can:create_post','auth']], function () {
     //show post belonging to a writer
     Route::get('/display-post',[Blogcontroller::class,'index'])->name('display-post');
     

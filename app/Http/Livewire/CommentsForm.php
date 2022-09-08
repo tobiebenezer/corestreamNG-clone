@@ -8,6 +8,7 @@ use App\Models\Comment;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
+use function PHPUnit\Framework\returnValue;
 use function Termwind\render;
 
 class CommentsForm extends Component
@@ -29,7 +30,7 @@ class CommentsForm extends Component
     //performs the operation or up date comment for approval by the blog admin on wordpress dashboard
     public function updateComment(){
         
-        
+        if($this->comment_content === '') return;
         $comment = new Comment();
         $comment->comment_author = Auth::id();
         $comment->comment_author_email =$this->comment_email;
@@ -48,8 +49,7 @@ class CommentsForm extends Component
          $this->comment_author='';
         $this->comment_content='';
         $this->comment_email='';
-        return redirect('/blog/'.$this->post_id);
-            //code...
+          //code...
         
         
     }

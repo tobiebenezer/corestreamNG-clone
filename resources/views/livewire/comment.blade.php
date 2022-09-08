@@ -25,7 +25,7 @@ img{
                                          <div class="row">
                                           <div class="col-8 d-flex">
                                              <h5 class="mr-3">{{$comment->comment_author}}</h5>
-                                             <span class="mr-3">- {{ round(abs((strtotime(date('d-m-y h:i:s')) - strtotime($comment->comment_date))% 86400)/3600) }} hours ago </span>
+                                             <span class="mr-3">- {{ $comment->comment_date->diffForHumans() }}  ago </span>
                                          {{ $comment->comment_content }}
                                           </div>
                                           

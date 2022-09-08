@@ -9,6 +9,7 @@
    
   <div class="text-center card-header"><h1>{{$post->post_title}}</h1></div>
   <div class="card-body">
+  <img class="img-responsive" title="images (23).jpeg" src="/storage/upload/blobid1662030153447.jpg" alt="ui" width="553" height="415">
     
     <p>{!! $post->post_content !!}</p>
     </div>

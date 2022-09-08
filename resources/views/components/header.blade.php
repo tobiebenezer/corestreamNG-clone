@@ -62,6 +62,14 @@
                     href="{{route('survellance')}}"
                     >Surveilance</a>
 
+                </li>
+
+                 <li class="nav-item @@survellance__active">
+                  <a
+                    class="nav-link"
+                    href="{{route('vacancy')}}"
+                    >Career</a>
+
                 </li> 
 
                 <li class="nav-item">
@@ -70,10 +78,11 @@
                     class="btn btn-primary d-none d-lg-block btn-style mr-2"
                     >Contact Us</a
                   >
-                </li>
+                </li> 
+                
                 @can('create_post')
                   <li>
-                  <a class="btn nav-link" href="{{route('display-post')}}">View Post</a>
+                  <a class="btn nav-link" href="{{route('display-post')}}">Dashboard</a>
                   </li>
                 @endcan
               @guest

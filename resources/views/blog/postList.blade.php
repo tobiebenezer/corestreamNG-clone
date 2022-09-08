@@ -56,4 +56,4 @@
   {{ $posts->onEachSide(3)->links() }}
   </div>
   </section>
-</x-app-layout>>
+</x-app-layout>

@@ -81,9 +81,10 @@
             mediaembed_max_width: 450,
             media_live_embeds: true,
             image_title: true,
+            relative_urls:false,
             automatic_uploads: true,
             images_upload_url: '/upload',
-            file_picker_types: 'image',
+            file_picker_types: 'image file media',
             file_picker_callback: function(cb, value, meta) {
                 var input = document.createElement('input');
                 input.setAttribute('type', 'file');

@@ -13,20 +13,21 @@
               @endguest
                @auth
                 <h5>Add a comment</h5>
-                 
+                 <form wire:submit.prevent ="updateComment" >
                 <div class="form-outline">
-                  <textarea class="form-control" wire:model = "comment_content" id="textAreaExample" rows="4"></textarea>
+                  <textarea class="form-control" wire:model.lazy = "comment_content" id="textAreaExample" rows="4"></textarea>
                   <label class="form-label" for="textAreaExample">What is your view?</label>
                 </div>
                 <div class="d-flex justify-content-between mt-3">
-                  <input class="form-control" type="email" wire:model ="comment_email" placeholder="Email">
+                  <input class="form-control" type="email" wire:model.lazy ="comment_email" placeholder="Email">
                   
                 </div>
-                  <button type="button" wire:click ="updateComment"  class="mt-3 btn btn-primary">
+                  <button type="submit"  class="mt-3 btn btn-primary">
                     Send <i class="fas fa-long-arrow-alt-right ms-1"></i>
                   </button>
               </div>
             </div>
+            </form>
                @endauth
           </div>
         </div>

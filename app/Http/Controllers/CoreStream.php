@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\subscriptionRequest;
+use App\Models\Career;
+use App\Models\CareerApplication;
 use App\Models\Subscription;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -106,5 +108,45 @@ class CoreStream extends Controller
          return view('pages.message',compact('subscribers'));
      }
 
+     /**
+      * display all the available vacancy 
+
+      *@return view
+      */
+      public function vacancy(){
+        $vacancy = Career::all();
+
+        return view("pages.career",compact('vacancy'));
+      }
+
+       /**
+      * submit vacancy application 
+
+      *@return view
+      */
+      public function submitApplication(Request $request){
+          
+          $request->validate([
+            'name'=> 'required',
+            'email'=>'email|required'
+            ,'cv'=>'file',
+            'career_id'=>'required'
+          ]);
+
+         $fileName =$request->file('cv')->getClientOriginalName();//get the original name of the file 
+        $imgPath = $request->file('cv')->storeAs('CV',$fileName,'public');//this save file in the storage folder with it original name as provide
+              
+        $application = CareerApplication::create([
+                  'name'=>$request->name,
+                  'email'=>$request->email,
+                  'phone'=>$request->phone,
+                  'path_to_cv'=>"/storage/$imgPath",
+                  'career_id' =>$request->career_id
+                  ]);
+                
+                  
+        return back();
+      }
+     
      
 }

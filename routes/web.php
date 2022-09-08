@@ -37,6 +37,8 @@ Route::get('/message',[CoreStream::class,'message'])->name('message');
 Route::get('/project',[CoreStream::class,'project'])->name('project');
 Route::get('/software',[CoreStream::class,'software'])->name('software');
 Route::get('/survellance',[CoreStream::class,'survellance'])->name('survellance');
+Route::get('/vacancy',[CoreStream::class,'vacancy'])->name('vacancy');
+Route::post('/application',[CoreStream::class,'submitApplication'])->name('application');
 //blog
 
 Route::get('/blog',[CoreStreamBlogController::class,'index'])->name('blog.index');
